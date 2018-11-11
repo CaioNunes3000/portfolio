@@ -237,6 +237,7 @@ div{
 	overflow-x:hidden;
 	overflow-y:hidden;
 	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
 	scroll-behavior:smooth;
 }
 #portfolio ul{
@@ -373,6 +374,11 @@ div{
 #form-msg:focus{
 	color:black;
 	border:none;
+}
+#redes{
+	position:absolute;
+	margin-top:-100px;
+	margin-left:260px;
 }
 h2{
 	color:#fff;

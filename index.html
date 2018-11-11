@@ -24,15 +24,9 @@
 			<div id='perfil'>
 				<img alt='Perfil do Caio' src='images/caioaranha.png'>
 				<div id='info-perfil'>
-					<h3>Eu tenho só 4 anos, todo dia crescendo, xeretando sou Caio.
-						Coisas novas para fazer, todo dia brincar, aprendendo sou Caio.
-						Meu mundo gira descobrindo a cada dia.
-						Mamãe e Papai iluminando o caminho.
-						Crescer não é tão fácil assim, cada dia na vida é uma nova surpresa.
-						Caio
-						Caio
-						Caio
-						Sou eu</h3>
+					<h3>Olá, meu nome é Caio. <br><br>Sou graduando no curso Sistemas e Mídias Digitais na Universidade Federal do Ceará e
+					técnico em informática formado pelo Instituto Federal da Educação, Ciência e Tecnologia do Ceará. <br><br>Claramente, pelas
+					cores do site, meu forte não é escolha de paleta mas o que importa é a tentativa de ser um designer.</h3>
 				</div>
 			</div>
 			<h2 id='skills'>SKILLS</h2>
@@ -52,32 +46,34 @@
 			</div>
 			<h2 id='portitulo'>PORTFÓLIO</h2>
 			<div id='portfolio'>
-				<ul class='trabalho'>
-					<li>
-						<img alt='Thumbnail de um vídeo do grupo de dança Alive' src='images/alive.png'/>
-						<h3>SOCIAL MEDIA</h3>
-						<p>Produção de contéudo visual <br>do grupo de dança Alive DG.</p>
-						<button type='button' onclick='show(3)'>Ver Mais</button>
-					</li>
-					<li>
-						<img alt='Poster do projeto Notitas' src='images/notitas.png'/>
-						<h3>NOTITAS</h3>
-						<p>Aplicação desktop focada em <br>musicalidade infantil.</p>
-						<button type='button' onclick='show(0)'>Ver Mais</button>
-					</li>
-					<li>
-						<img alt='Poster do projeto Satyr' src='images/satyr.png'/>
-						<h3>SATYR</h3>
-						<p>Jogo sobre preservação <br>ambiental.</p>
-						<button type='button' onclick='show(1)'>Ver Mais</button>
-					</li>
-					<li>
-						<img alt='Print da página de feed do projeto Falow' src='images/falow.png'/>
-						<h3>FALOW</h3>
-						<p>Rede social projetada na disciplina <br>de Eng. de Software no IFCE.</p>
-						<button type='button' onclick='show(2)'>Ver Mais</button>
-					</li>
-				</ul>
+				<div class="galeriabt" id='bt-esquerda' onclick='scrollar(0);'>&larr;</div>
+					<ul id='trabalho'>
+						<li>
+							<img alt='Thumbnail de um vídeo do grupo de dança Alive' src='images/alive.png'/>
+							<h3>SOCIAL MEDIA</h3>
+							<p>Produção de contéudo visual <br>do grupo de dança Alive DG.</p>
+							<button type='button' onmousedown='show(3)'>Ver Mais</button>
+						</li>
+						<li>
+							<img alt='Poster do projeto Notitas' src='images/notitas.png'/>
+							<h3>NOTITAS</h3>
+							<p>Aplicação desktop focada em <br>musicalidade infantil.</p>
+							<button type='button' onclick='show(0)'>Ver Mais</button>
+						</li>
+						<li>
+							<img alt='Poster do projeto Satyr' src='images/satyr.png'/>
+							<h3>SATYR</h3>
+							<p>Jogo sobre preservação <br>ambiental.</p>
+							<button type='button' onclick='show(1)'>Ver Mais</button>
+						</li>
+						<li>
+							<img alt='Print da página de feed do projeto Falow' src='images/falow.png'/>
+							<h3>FALOW</h3>
+							<p>Rede social projetada na <br>disciplina de Eng. de Software.</p>
+							<button type='button' onclick='show(2)'>Ver Mais</button>
+						</li>
+					</ul>
+				<div class="galeriabt" id='bt-direita' onmousedown='scrollar(1);'>&rarr;</div>
 			</div>
 			<div id="overlay">
 				<div id="lightbox">
@@ -98,12 +94,16 @@
 						<br>
 						<label>Mensagem:</label>
 						<br>
-						<textarea id='form-msg'  cols='54' rows='5'></textarea>
+						<textarea id='form-msg'  cols='54' rows='10'></textarea>
 						<br>
 						<br>
 						<input id='enviar' type='submit' value='Enviar'>
 						<br>
 					</form>
+				</div>
+				<div id='sociais'>
+					<a href=''><img src='images/facebook.png'/></a>
+					<a href=''><img src='images/instagram.png'/></a>
 				</div>
 			</div>
 		</div>

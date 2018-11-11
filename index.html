@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0' >
+		<title>Portfólio Caio</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="lightbox.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Dosis:400,700,800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">  
+	</head>
+	<body>
+		<div id='cabecalho'>
+			<img id='logo' src='images/logo.png'/>
+			<div id='menu'>
+				<a href='#quemsou'>Quem sou eu?</a>
+				<a href='#skills'>Skills</a>
+				<a href='#portitulo'>Portfólio</a>
+				<a href='#contatitulo'>Contato</a>
+			</div>
+		</div>
+		<div id='bg'>
+			<h2 id='quemsou'>QUEM SOU EU?</h2>
+			<div id='perfil'>
+				<img src='images/caioaranha.png'>
+				<div id='info-perfil'>
+					<h3>Eu tenho só 4 anos, todo dia crescendo, xeretando sou Caio.
+						Coisas novas para fazer, todo dia brincar, aprendendo sou Caio.
+						Meu mundo gira descobrindo a cada dia.
+						Mamãe e Papai iluminando o caminho.
+						Crescer não é tão fácil assim, cada dia na vida é uma nova surpresa.
+						Caio
+						Caio
+						Caio
+						Sou eu</h3>
+				</div>
+			</div>
+			<h2 id='skills'>SKILLS</h2>
+			<div id='hab'>
+				<div id='container'>
+				   <div id='grafico'>
+					   <div id='php' class='barra'> PHP - 60%</div>
+					   <div id='python' class='barra'> Python - 60%</div>
+					   <div id='jvsc' class='barra'> Javascript - 70%</div>
+					   <div id='htcs' class='barra'> HTML/CSS - 50%</div>
+					   <div id='adps' class='barra'>Adobe Photoshop - 80%</div>
+					   <div id='adpp' class='barra'>Adobe Premiere Pro - 70%</div>
+					   <div id='sv' class='barra'>Sony Vegas - 70%</div>
+					   <div id='esf' class='barra'>Esforçado e Autodidata - 100% &#128521;</div>
+				   </div>
+				</div> 
+			</div>
+			<h2 id='portitulo'>PORTFÓLIO</h2>
+			<div id='portfolio'>
+				<ul class='trabalho'>
+					<li>
+						<img alt='Thumbnail de um vídeo do grupo de dança Alive' src='images/alive.png'/>
+						<h3>SOCIAL MEDIA</h3>
+						<p>Produção de contéudo visual <br>do grupo de dança Alive DG.</p>
+						<button type='button' onclick='show(3)'>Ver Mais</button>
+					</li>
+					<li>
+						<img alt='Poster do projeto Notitas' src='images/notitas.png'/>
+						<h3>NOTITAS</h3>
+						<p>Aplicação desktop focada em <br>musicalidade infantil.</p>
+						<button type='button' onclick='show(0)'>Ver Mais</button>
+					</li>
+					<li>
+						<img alt='Poster do projeto Satyr' src='images/satyr.png'/>
+						<h3>SATYR</h3>
+						<p>Jogo sobre preservação <br>ambiental.</p>
+						<button type='button' onclick='show(1)'>Ver Mais</button>
+					</li>
+					<li>
+						<img alt='Print da página de feed do projeto Falow' src='images/falow.png'/>
+						<h3>FALOW</h3>
+						<p>Rede social projetada na disciplina <br>de Eng. de Software no IFCE.</p>
+						<button type='button' onclick='show(2)'>Ver Mais</button>
+					</li>
+				</ul>
+			</div>
+			<div id="overlay">
+				<div id="lightbox">
+					<div class="fechar" onclick='fecharBox();'>&times;</div>
+				</div>
+			</div>
+			<h2 id='contatitulo'>CONTATO</h2>
+			<div id='rodape'>
+				<div id='contato'>
+					<form>
+						<label>Nome:</label>
+						<br>
+						<input type='text'>
+						<br>
+						<label>Email:</label>
+						<br>
+						<input type='text' >
+						<br>
+						<label>Mensagem:</label>
+						<br>
+						<textarea id='form-msg'  cols='54' rows='5'></textarea>
+						<br>
+						<br>
+						<input id='enviar' type='submit' value='Enviar'>
+						<br>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
